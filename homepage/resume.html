@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Building</title>
+    <title>Skills & Jobs Portal</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: black;
-            color: #333;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
         header {
-            background-color: #222;
+            background-color: #111;
             color: #fff;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
         }
         .content {
             padding: 20px;
@@ -24,49 +31,76 @@
             margin: auto;
         }
         .hero {
-            background: url('resume-hero.jpg') no-repeat center center/cover;
-            color:rgb(255, 255, 255);
-            padding: 60px 20px;
+            background: url('skills-hero.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 80px 20px;
             text-align: center;
-            border-radius: 10px;
-            margin-bottom: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
         }
         .hero h1 {
-            font-size: 48px;
+            font-size: 3em;
+            margin: 0;
+            z-index: 2;
+        }
+        .hero p {
+            font-size: 1.2em;
+            z-index: 2;
         }
         .section {
-            margin-bottom: 20px;
-            padding: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 30px;
+            background: #1c1c1c;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
         .section h2 {
             margin-top: 0;
-            color: #baa51a;
+            color: #ffab00;
+            font-size: 2em;
+            border-bottom: 2px solid #ffab00;
+            padding-bottom: 10px;
         }
         .section img {
             max-width: 100%;
-            border-radius: 10px;
+            border-radius: 15px;
             margin-top: 20px;
         }
         .section ul {
-            list-style-type: disc;
+            list-style-type: circle;
             margin: 20px 0;
             padding-left: 20px;
         }
         .section p {
-            line-height: 1.6;
+            line-height: 1.8;
+            font-size: 1.1em;
         }
         footer {
-            background-color: #222;
+            background-color: #111;
             color: #fff;
             text-align: center;
             padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
         }
         footer a {
-            color: #ffdf00;
+            color: #ffab00;
             text-decoration: none;
+            font-weight: bold;
         }
         footer a:hover {
             text-decoration: underline;
@@ -75,37 +109,36 @@
 </head>
 <body>
     <header>
-        <h1>Resume Building</h1>
+        <h1>Skills & Jobs Portal</h1>
     </header>
     <div class="content">
         <div class="hero">
-            <h1>Craft Your Perfect Resume</h1>
-            <p>Stand out from the crowd with a professionally crafted resume that highlights your skills and achievements.</p>
+            <h1>Find the Perfect Job for Your Skills</h1>
+            <p>Discover job opportunities and develop the skills you need to advance your career.</p>
         </div>
         <div class="section">
-            <h2>Essential Elements of a Resume</h2>
-            <img src="resume-tips.jpg" alt="Resume Tips">
-            <p>Your resume is often the first impression you make on potential employers. Make sure it includes the following:</p>
+            <h2>Explore In-Demand Skills</h2>
+            <img src="skills-directory.jpg" alt="Skills Directory">
+            <p>Stay ahead in your career by mastering skills that employers are looking for. Check out our comprehensive list of skills and resources to help you grow.</p>
             <ul>
-                <li><strong>Contact Information:</strong> Ensure your details are up-to-date.</li>
-                <li><strong>Professional Summary:</strong> A brief overview of your career goals and qualifications.</li>
-                <li><strong>Work Experience:</strong> Detail your relevant work history with achievements.</li>
-                <li><strong>Education:</strong> List your academic background and any certifications.</li>
+                <li><strong>Technical Skills:</strong> Learn about the latest technologies and tools.</li>
+                <li><strong>Soft Skills:</strong> Develop communication, leadership, and teamwork abilities.</li>
+                <li><strong>Industry-Specific Skills:</strong> Gain expertise tailored to your field of interest.</li>
             </ul>
         </div>
         <div class="section">
-            <h2>Resume Formatting Tips</h2>
-            <p>Formatting can make a big difference. Consider these tips:</p>
+            <h2>Job Opportunities</h2>
+            <p>Find jobs that match your skills and career goals. Our platform provides a curated list of job openings across various industries.</p>
             <ul>
-                <li>Use clear headings and bullet points.</li>
-                <li>Keep it concise—ideally one page, two at most.</li>
-                <li>Choose a professional font and layout.</li>
+                <li>Browse job listings by role, industry, or location.</li>
+                <li>Apply filters to find jobs that fit your skill set and preferences.</li>
+                <li>Save and track your job applications with ease.</li>
             </ul>
         </div>
     </div>
     <footer>
-        <p>&copy; 2024 Job Skills. All rights reserved.</p>
+        <p>&copy; 2024 Skills & Jobs Portal. All rights reserved.</p>
         <p><a href="index.html">Back to Home</a></p>
     </footer>
 </body>
-</html>v
+</html>
